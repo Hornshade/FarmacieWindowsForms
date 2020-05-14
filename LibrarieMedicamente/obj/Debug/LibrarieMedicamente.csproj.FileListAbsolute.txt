@@ -1,0 +1,5 @@
+D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\LibrarieMedicamente\bin\Debug\LibrarieMedicamente.dll
+D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\LibrarieMedicamente\bin\Debug\LibrarieMedicamente.pdb
+D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\LibrarieMedicamente\obj\Debug\LibrarieMedicamente.csprojAssemblyReference.cache
+D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\LibrarieMedicamente\obj\Debug\LibrarieMedicamente.dll
+D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\LibrarieMedicamente\obj\Debug\LibrarieMedicamente.pdb

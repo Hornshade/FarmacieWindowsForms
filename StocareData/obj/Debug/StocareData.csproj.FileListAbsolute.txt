@@ -1,0 +1,8 @@
+D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\StocareData\bin\Debug\StocareData.dll
+D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\StocareData\bin\Debug\StocareData.pdb
+D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\StocareData\bin\Debug\LibrarieMedicamente.dll
+D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\StocareData\bin\Debug\LibrarieMedicamente.pdb
+D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\StocareData\obj\Debug\StocareData.csprojAssemblyReference.cache
+D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\StocareData\obj\Debug\StocareData.csproj.CopyComplete
+D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\StocareData\obj\Debug\StocareData.dll
+D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\StocareData\obj\Debug\StocareData.pdb
