@@ -13,7 +13,8 @@ namespace InterfataFarmacie
         NUME_INCORECT=1,
         PRET_INCORECT=2,
         RETETA_INCORECTA=4,
-        ADMINISTRARE_INCORECTA=8
+        ADMINISTRARE_INCORECTA=8,
+        VARSTA_INCORECTA=16
         
         
     }

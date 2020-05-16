@@ -1,1 +1,7 @@
-1;Test2;13;Injectabil;Nu
+1;asda;34.6;Supozitoare;Da;
+2;dab;3;Injectabil;Nu;
+3;abd;324;Injectabil;Nu;
+4;agagda;34;Sirop;Da;
+5;asda;34.6;Supozitoare;Da;
+6;dab;3;Injectabil;Nu;
+7;asda;34.6;Supozitoare;Da;

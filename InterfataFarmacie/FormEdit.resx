@@ -117,26 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="shutterstock_1452259085_cutii_medicamente_fiole_antibiotice2-1035x425" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\shutterstock_1452259085_cutii_medicamente_fiole_antibiotice2-1035x425.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Trei-medicamente-pentru-diabet--scoase-de-pe-piata" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Trei-medicamente-pentru-diabet--scoase-de-pe-piata.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Interactiuni_medicamente_si_suplimente" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Interactiuni_medicamente_si_suplimente.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="unnamed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\unnamed.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="flickr-marco-verch-1132x670" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\flickr-marco-verch-1132x670.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="capsules-cure-drug-415825" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\capsules-cure-drug-415825.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="724449-1524756677-studiu-medicamentele-antidepresive-asociate-cu-un-risc-crescut-de-dementa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\724449-1524756677-studiu-medicamentele-antidepresive-asociate-cu-un-risc-crescut-de-dementa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>

@@ -15,11 +15,13 @@ namespace InterfataFarmacie
     public partial class FormMedicament : Form
     {
         IStocareData adminMedicamente;
+        List<string> VarsteSelectate = new List<string>();
         public FormMedicament()
         {
             InitializeComponent();
             adminMedicamente = StocareFactory.GetAdministratorStocare();
         }
+        
 
         // On use the button adds the input into the list and the file.
         private void btnAdauga_Click(object sender, EventArgs e)
@@ -33,12 +35,17 @@ namespace InterfataFarmacie
             }
             else
             {
-                Medicamente m = new Medicamente(txtNume.Text, Int32.Parse(txtPret.Text));
+                List<Medicamente> med = new List<Medicamente>();
+                med = adminMedicamente.GetMedicamente();
+                lstAfisare.Items.Add(med[0].Nume);
+                Medicamente m = new Medicamente(txtNume.Text, Convert.ToSingle(txtPret.Text));
                 if (rdbRetetaDa.Checked == true)
                     m.Reteta = rdbRetetaDa.Text;
                 else
                     m.Reteta = rdbRetetaNu.Text;
                 m.Administrare = cbnAdministrare.Text;
+                m.Varsta = new List<string>();
+                m.Varsta.AddRange(VarsteSelectate);
 
 
                 adminMedicamente.AddMedicament(m);
@@ -49,6 +56,25 @@ namespace InterfataFarmacie
                 
             }
         }
+        // Checks if pret is an integer from 0-9 in ASCII code 
+        private bool VerificarePret(string pret)
+        {
+            int index = 0;
+            foreach(char c in pret)
+            {
+                if (c == 46)
+                {
+                    if (pret.IndexOf(c) == 0 || index != 0)
+                        return false;
+                    else
+                        index++;
+                }
+                    if ((c < 46 && c != 47) || c > 57)
+                        return false;
+                
+            }
+            return true;
+        }
         //Resets the controls after using any button.
         private void ResetControale()
         {
@@ -58,6 +84,10 @@ namespace InterfataFarmacie
             cbnAdministrare.Text = string.Empty;
             rdbRetetaDa.Checked = false;
             rdbRetetaNu.Checked = false;
+            ckb12ani.Checked = false;
+            ckb18ani.Checked = false;
+            ckb36luni.Checked = false;
+            ckb3luni.Checked = false;
 
         }
         // Validates if the fields are completed.
@@ -68,7 +98,7 @@ namespace InterfataFarmacie
             {
                 rezultatValidare |= ErrorCode.NUME_INCORECT;
             }
-            if (pret == string.Empty)
+            if (pret == string.Empty || VerificarePret(pret)== false)
             {
                 rezultatValidare |= ErrorCode.PRET_INCORECT;
             }
@@ -80,6 +110,10 @@ namespace InterfataFarmacie
             {
                 rezultatValidare |= ErrorCode.ADMINISTRARE_INCORECTA;
             }
+            if (VarsteSelectate.Count!=0)
+            {
+                rezultatValidare |= ErrorCode.VARSTA_INCORECTA;
+            }
             return rezultatValidare;
         }
         // Resets the color of the labels after they are marked with red.
@@ -89,6 +123,7 @@ namespace InterfataFarmacie
             lblPret.ForeColor = default;
             lblReteta.ForeColor = default;
             lblTipMed.ForeColor = default;
+            lblVarsta.ForeColor = default;
 
         }
         // Marks with red the labels of the fields which are incorrect.
@@ -117,23 +152,40 @@ namespace InterfataFarmacie
             {
                 lblTipMed.ForeColor = Color.Red;
             }
+            else
+                lblTipMed.ForeColor = default;
+            if ((codValidare & ErrorCode.VARSTA_INCORECTA) == ErrorCode.VARSTA_INCORECTA)
+            {
+                lblVarsta.ForeColor = Color.Red;
+            }
+            else
+                lblVarsta.ForeColor = default;
         }
-        
         //  On click the button will fill up the List with items from the file where they are saved ( Medicamente.txt)
         private void btnAfiseaza_Click(object sender, EventArgs e)
         {
             lstAfisare.Items.Clear();
             //var antetTabel = string.Format("{0,-5}{1,-35}{2,20}{3,30}\n", "ID", "Nume Medicament", "Pret", "Administrare");
             string ID = "ID", nume = "Nume Medicament", pret = "Pret", administrare = "Administrare";
-            var antetTabel = ID.PadRight(5 - ID.Length) + nume.PadRight(20 - nume.Length) + "\t\t" + pret.PadRight(7 - pret.Length) + "\t\t" + administrare.PadRight(15-administrare.Length)+"\t\t"+"Reteta";
+            var antetTabel = ID.PadRight(5 - ID.Length) + nume.PadRight(20 - nume.Length) + "\t\t" + pret.PadRight(7 - pret.Length) + "\t\t" + administrare.PadRight(15-administrare.Length)+"\t"+"Reteta";
             
             lstAfisare.Items.Add(antetTabel);
             List<Medicamente> medicamente = adminMedicamente.GetMedicamente();
-            foreach(Medicamente m in medicamente)
+            foreach (Medicamente m in medicamente)
             {
-                var linieTabel = m.IdMedicament.ToString().PadRight(5 - m.IdMedicament.ToString().Length) + m.Nume.PadRight(20 - m.Nume.Length) + "\t\t\t" + m.Pret.ToString().PadRight(7 - m.Pret.ToString().Length) + "\t\t" + m.Administrare.PadRight(15-m.Administrare.Length)+"\t\t\t"+m.Reteta;
-                //var linieTabel = string.Format("{0,-5}{1,-35}{2,20}{3,30}", m.IdMedicament, m.Nume, m.Pret, m.Administrare);
-                lstAfisare.Items.Add(linieTabel);
+                if (m.Administrare == "Supozitoare")
+                {
+                    var linieTabel = m.IdMedicament.ToString().PadRight(5 - m.IdMedicament.ToString().Length) + m.Nume.PadRight(20 - m.Nume.Length) + "\t\t\t" + m.Pret.ToString().PadRight(7 - m.Pret.ToString().Length) + "\t\t" + m.Administrare.PadRight(15 - m.Administrare.Length) + "\t" + m.Reteta;
+                    //var linieTabel = string.Format("{0,-5}{1,-35}{2,20}{3,30}", m.IdMedicament, m.Nume, m.Pret, m.Administrare);
+                    lstAfisare.Items.Add(linieTabel);
+                }
+                else
+                {
+                    var linieTabel = m.IdMedicament.ToString().PadRight(5 - m.IdMedicament.ToString().Length) + m.Nume.PadRight(20 - m.Nume.Length) + "\t\t\t" + m.Pret.ToString().PadRight(7 - m.Pret.ToString().Length) + "\t\t" + m.Administrare.PadRight(15 - m.Administrare.Length) + "\t\t" + m.Reteta;
+                    //var linieTabel = string.Format("{0,-5}{1,-35}{2,20}{3,30}", m.IdMedicament, m.Nume, m.Pret, m.Administrare);
+                    lstAfisare.Items.Add(linieTabel);
+                }
+                
             }
         }
         // Input name and search for it in the list , followed by displaying a text with the price of the drug , its name and type.
@@ -151,35 +203,43 @@ namespace InterfataFarmacie
                 lblMesaj.Text = "Medicamentul nu a fost gasit !";
             }
         }
+        
         // After selecting an item from the List you rewrite and edit the data. Use the Edit button to apply the changes.
         private void btnEditeaza_Click(object sender, EventArgs e)
         {
-            ResetCuloareEtichete();
-            ErrorCode codValidare = Validare(txtNume.Text, txtPret.Text);
-            if(codValidare !=ErrorCode.CORRECT)
-            {
-                MarcheazaIncorect(codValidare);
-            }
-            else
-            {
+            
+            FormEdit Editeaza = new FormEdit(adminMedicamente.GetMedicamentByIndex(lstAfisare.SelectedIndex-1));
+            Editeaza.ShowDialog();
+            
+            //ResetCuloareEtichete();
+            //ErrorCode codValidare = Validare(txtNume.Text, txtPret.Text);
+            //if(codValidare !=ErrorCode.CORRECT)
+            //{
+            //    MarcheazaIncorect(codValidare);
+            //}
+            //else
+            //{
+                
 
-                if (lstAfisare.SelectedIndex >= 0)
-                {
-                    Medicamente m = new Medicamente(txtNume.Text,Int32.Parse(txtPret.Text));
+            //    if (lstAfisare.SelectedIndex >= 0)
+            //    {
+            //        Medicamente m = new Medicamente(txtNume.Text,Convert.ToSingle(txtPret.Text));
 
-                    m.IdMedicament = Int32.Parse(lblID.Text);
-                    if (rdbRetetaDa.Checked == true)
-                        m.Reteta = rdbRetetaDa.Text;
-                    else
-                        m.Reteta = rdbRetetaNu.Text;
-                    m.Administrare = cbnAdministrare.Text;
+            //        m.IdMedicament = Int32.Parse(lblID.Text);
+            //        if (rdbRetetaDa.Checked == true)
+            //            m.Reteta = rdbRetetaDa.Text;
+            //        else
+            //            m.Reteta = rdbRetetaNu.Text;
+            //        m.Administrare = cbnAdministrare.Text;
+            //        m.Varsta = new List<string>();
+            //        m.Varsta.AddRange(VarsteSelectate);
 
-                    adminMedicamente.UpdateMedicament(m);
-                    lblMesaj.Visible = true;
-                    lblMesaj.Text = "Medicamentul a fost editat";
-                    ResetControale();
-                }
-            }
+            //        adminMedicamente.UpdateMedicament(m);
+            //        lblMesaj.Visible = true;
+            //        lblMesaj.Text = "Medicamentul a fost editat";
+            //        ResetControale();
+            //    }
+            //}
         }
         // Select an index from the List and fills the text boxes with the information from that selected index
         private void lstAfisare_SelectedIndexChanged(object sender, EventArgs e)
@@ -197,8 +257,33 @@ namespace InterfataFarmacie
                     rdbRetetaDa.Checked = true;
                 else
                     rdbRetetaNu.Checked = true;
+
+                foreach(var vrst in gpbVarsta.Controls)
+                {
+                    if(vrst is CheckBox)
+                    {
+                        var vrstBox = vrst as CheckBox;
+                        foreach (String vst in m.Varsta)
+                            if (vrstBox.Text==vst)
+                                vrstBox.Checked = true;
+                    }
+                }
             }
                 
         }
+        // Checkbox Varsta 
+        private void ckbVarstaSLCT_Changed(object sender, EventArgs e)
+        {
+            CheckBox checkChanged = sender as CheckBox;
+
+            string varstaSelectata = checkChanged.Text;
+ 
+            if (checkChanged.Checked == true)
+                VarsteSelectate.Add(varstaSelectata);
+            else
+                VarsteSelectate.Remove(varstaSelectata);
+        }
+
+        
     }
 }
