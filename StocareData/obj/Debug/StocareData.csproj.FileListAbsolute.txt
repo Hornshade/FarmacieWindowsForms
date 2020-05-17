@@ -6,3 +6,12 @@ D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\StocareData\obj\Debu
 D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\StocareData\obj\Debug\StocareData.csproj.CopyComplete
 D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\StocareData\obj\Debug\StocareData.dll
 D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\StocareData\obj\Debug\StocareData.pdb
+D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\StocareData\bin\Debug\StocareData.dll
+D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\StocareData\bin\Debug\StocareData.pdb
+D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\StocareData\bin\Debug\LibrarieMedicamente.dll
+D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\StocareData\bin\Debug\LibrarieMedicamente.pdb
+D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\StocareData\obj\Debug\StocareData.csprojAssemblyReference.cache
+D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\StocareData\obj\Debug\StocareData.csproj.CopyComplete
+D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\StocareData\obj\Debug\StocareData.dll
+D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\StocareData\obj\Debug\StocareData.pdb
+D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\StocareData\obj\Debug\StocareData.csproj.CoreCompileInputs.cache

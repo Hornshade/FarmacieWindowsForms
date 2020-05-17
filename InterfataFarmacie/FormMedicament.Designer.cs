@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMedicament));
             this.lblNume = new System.Windows.Forms.Label();
             this.lblPret = new System.Windows.Forms.Label();
             this.txtNume = new System.Windows.Forms.TextBox();
@@ -45,102 +46,124 @@
             this.rdbRetetaDa = new System.Windows.Forms.RadioButton();
             this.lblMesaj = new System.Windows.Forms.Label();
             this.lblID = new System.Windows.Forms.Label();
+            this.lblVarsta = new System.Windows.Forms.Label();
+            this.gpbVarsta = new System.Windows.Forms.GroupBox();
+            this.ckb3luni = new System.Windows.Forms.CheckBox();
+            this.ckb12ani = new System.Windows.Forms.CheckBox();
+            this.ckb18ani = new System.Windows.Forms.CheckBox();
+            this.ckb36luni = new System.Windows.Forms.CheckBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.salveazaListaMedicamentelorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuActualizare = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuExpirare = new System.Windows.Forms.ToolStripMenuItem();
+            this.dtActualizare = new System.Windows.Forms.DateTimePicker();
             this.gpbReteta.SuspendLayout();
+            this.gpbVarsta.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblNume
             // 
             this.lblNume.AutoSize = true;
-            this.lblNume.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNume.Location = new System.Drawing.Point(12, 22);
+            this.lblNume.BackColor = System.Drawing.Color.Transparent;
+            this.lblNume.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNume.Location = new System.Drawing.Point(15, 27);
             this.lblNume.Name = "lblNume";
-            this.lblNume.Size = new System.Drawing.Size(51, 20);
+            this.lblNume.Size = new System.Drawing.Size(60, 24);
             this.lblNume.TabIndex = 0;
             this.lblNume.Text = "Nume";
             // 
             // lblPret
             // 
             this.lblPret.AutoSize = true;
-            this.lblPret.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPret.Location = new System.Drawing.Point(12, 59);
+            this.lblPret.BackColor = System.Drawing.Color.Transparent;
+            this.lblPret.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPret.Location = new System.Drawing.Point(15, 67);
             this.lblPret.Name = "lblPret";
-            this.lblPret.Size = new System.Drawing.Size(38, 20);
+            this.lblPret.Size = new System.Drawing.Size(46, 24);
             this.lblPret.TabIndex = 1;
             this.lblPret.Text = "Pret";
             // 
             // txtNume
             // 
-            this.txtNume.Location = new System.Drawing.Point(111, 24);
+            this.txtNume.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNume.Location = new System.Drawing.Point(129, 26);
             this.txtNume.Name = "txtNume";
-            this.txtNume.Size = new System.Drawing.Size(139, 20);
+            this.txtNume.Size = new System.Drawing.Size(139, 28);
             this.txtNume.TabIndex = 2;
             // 
             // txtPret
             // 
-            this.txtPret.Location = new System.Drawing.Point(111, 61);
+            this.txtPret.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPret.Location = new System.Drawing.Point(129, 66);
             this.txtPret.Name = "txtPret";
-            this.txtPret.Size = new System.Drawing.Size(139, 20);
+            this.txtPret.Size = new System.Drawing.Size(139, 28);
             this.txtPret.TabIndex = 3;
             // 
             // lblReteta
             // 
             this.lblReteta.AutoSize = true;
-            this.lblReteta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReteta.Location = new System.Drawing.Point(12, 114);
+            this.lblReteta.BackColor = System.Drawing.Color.Transparent;
+            this.lblReteta.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReteta.Location = new System.Drawing.Point(15, 121);
             this.lblReteta.Name = "lblReteta";
-            this.lblReteta.Size = new System.Drawing.Size(58, 20);
+            this.lblReteta.Size = new System.Drawing.Size(63, 24);
             this.lblReteta.TabIndex = 4;
             this.lblReteta.Text = "Reteta";
             // 
             // lblTipMed
             // 
             this.lblTipMed.AutoSize = true;
-            this.lblTipMed.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipMed.Location = new System.Drawing.Point(7, 161);
+            this.lblTipMed.BackColor = System.Drawing.Color.Transparent;
+            this.lblTipMed.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipMed.Location = new System.Drawing.Point(12, 172);
             this.lblTipMed.Name = "lblTipMed";
-            this.lblTipMed.Size = new System.Drawing.Size(98, 20);
+            this.lblTipMed.Size = new System.Drawing.Size(112, 21);
             this.lblTipMed.TabIndex = 7;
             this.lblTipMed.Text = "Administrare";
             // 
             // cbnAdministrare
             // 
+            this.cbnAdministrare.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbnAdministrare.FormattingEnabled = true;
             this.cbnAdministrare.Items.AddRange(new object[] {
             "Supozitoare",
             "Injectabil",
             "Sirop",
             "Pastile"});
-            this.cbnAdministrare.Location = new System.Drawing.Point(111, 163);
+            this.cbnAdministrare.Location = new System.Drawing.Point(129, 169);
             this.cbnAdministrare.Name = "cbnAdministrare";
-            this.cbnAdministrare.Size = new System.Drawing.Size(139, 21);
+            this.cbnAdministrare.Size = new System.Drawing.Size(139, 29);
             this.cbnAdministrare.TabIndex = 8;
             // 
             // lstAfisare
             // 
+            this.lstAfisare.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstAfisare.FormattingEnabled = true;
-            this.lstAfisare.Location = new System.Drawing.Point(271, 10);
+            this.lstAfisare.Location = new System.Drawing.Point(274, 26);
             this.lstAfisare.Name = "lstAfisare";
-            this.lstAfisare.Size = new System.Drawing.Size(502, 329);
+            this.lstAfisare.Size = new System.Drawing.Size(502, 368);
             this.lstAfisare.TabIndex = 9;
             this.lstAfisare.SelectedIndexChanged += new System.EventHandler(this.lstAfisare_SelectedIndexChanged);
             // 
             // btnAdauga
             // 
+            this.btnAdauga.BackColor = System.Drawing.Color.Transparent;
             this.btnAdauga.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdauga.Location = new System.Drawing.Point(15, 243);
+            this.btnAdauga.Location = new System.Drawing.Point(16, 299);
             this.btnAdauga.Name = "btnAdauga";
-            this.btnAdauga.Size = new System.Drawing.Size(97, 41);
+            this.btnAdauga.Size = new System.Drawing.Size(97, 44);
             this.btnAdauga.TabIndex = 10;
             this.btnAdauga.Text = "Adauga";
-            this.btnAdauga.UseVisualStyleBackColor = true;
+            this.btnAdauga.UseVisualStyleBackColor = false;
             this.btnAdauga.Click += new System.EventHandler(this.btnAdauga_Click);
             // 
             // btnAfiseaza
             // 
             this.btnAfiseaza.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAfiseaza.Location = new System.Drawing.Point(134, 243);
+            this.btnAfiseaza.Location = new System.Drawing.Point(171, 299);
             this.btnAfiseaza.Name = "btnAfiseaza";
-            this.btnAfiseaza.Size = new System.Drawing.Size(97, 41);
+            this.btnAfiseaza.Size = new System.Drawing.Size(97, 44);
             this.btnAfiseaza.TabIndex = 11;
             this.btnAfiseaza.Text = "Afiseaza";
             this.btnAfiseaza.UseVisualStyleBackColor = true;
@@ -149,9 +172,9 @@
             // btnEditeaza
             // 
             this.btnEditeaza.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditeaza.Location = new System.Drawing.Point(15, 290);
+            this.btnEditeaza.Location = new System.Drawing.Point(16, 349);
             this.btnEditeaza.Name = "btnEditeaza";
-            this.btnEditeaza.Size = new System.Drawing.Size(97, 41);
+            this.btnEditeaza.Size = new System.Drawing.Size(97, 44);
             this.btnEditeaza.TabIndex = 12;
             this.btnEditeaza.Text = "Editeaza";
             this.btnEditeaza.UseVisualStyleBackColor = true;
@@ -160,9 +183,9 @@
             // btnCauta
             // 
             this.btnCauta.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCauta.Location = new System.Drawing.Point(134, 290);
+            this.btnCauta.Location = new System.Drawing.Point(171, 349);
             this.btnCauta.Name = "btnCauta";
-            this.btnCauta.Size = new System.Drawing.Size(97, 41);
+            this.btnCauta.Size = new System.Drawing.Size(97, 44);
             this.btnCauta.TabIndex = 13;
             this.btnCauta.Text = "Cauta";
             this.btnCauta.UseVisualStyleBackColor = true;
@@ -170,20 +193,22 @@
             // 
             // gpbReteta
             // 
+            this.gpbReteta.BackColor = System.Drawing.Color.Transparent;
             this.gpbReteta.Controls.Add(this.rdbRetetaNu);
             this.gpbReteta.Controls.Add(this.rdbRetetaDa);
-            this.gpbReteta.Location = new System.Drawing.Point(111, 87);
+            this.gpbReteta.Location = new System.Drawing.Point(129, 94);
             this.gpbReteta.Name = "gpbReteta";
-            this.gpbReteta.Size = new System.Drawing.Size(139, 64);
+            this.gpbReteta.Size = new System.Drawing.Size(139, 69);
             this.gpbReteta.TabIndex = 14;
             this.gpbReteta.TabStop = false;
             // 
             // rdbRetetaNu
             // 
             this.rdbRetetaNu.AutoSize = true;
-            this.rdbRetetaNu.Location = new System.Drawing.Point(52, 41);
+            this.rdbRetetaNu.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbRetetaNu.Location = new System.Drawing.Point(79, 25);
             this.rdbRetetaNu.Name = "rdbRetetaNu";
-            this.rdbRetetaNu.Size = new System.Drawing.Size(39, 17);
+            this.rdbRetetaNu.Size = new System.Drawing.Size(54, 28);
             this.rdbRetetaNu.TabIndex = 1;
             this.rdbRetetaNu.TabStop = true;
             this.rdbRetetaNu.Text = "Nu";
@@ -192,9 +217,10 @@
             // rdbRetetaDa
             // 
             this.rdbRetetaDa.AutoSize = true;
-            this.rdbRetetaDa.Location = new System.Drawing.Point(52, 11);
+            this.rdbRetetaDa.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbRetetaDa.Location = new System.Drawing.Point(6, 25);
             this.rdbRetetaDa.Name = "rdbRetetaDa";
-            this.rdbRetetaDa.Size = new System.Drawing.Size(39, 17);
+            this.rdbRetetaDa.Size = new System.Drawing.Size(53, 28);
             this.rdbRetetaDa.TabIndex = 0;
             this.rdbRetetaDa.TabStop = true;
             this.rdbRetetaDa.Text = "Da";
@@ -203,10 +229,11 @@
             // lblMesaj
             // 
             this.lblMesaj.AutoSize = true;
-            this.lblMesaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMesaj.Location = new System.Drawing.Point(10, 388);
+            this.lblMesaj.BackColor = System.Drawing.Color.Transparent;
+            this.lblMesaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMesaj.Location = new System.Drawing.Point(15, 412);
             this.lblMesaj.Name = "lblMesaj";
-            this.lblMesaj.Size = new System.Drawing.Size(100, 25);
+            this.lblMesaj.Size = new System.Drawing.Size(87, 24);
             this.lblMesaj.TabIndex = 15;
             this.lblMesaj.Text = "lblMesaj";
             this.lblMesaj.Visible = false;
@@ -214,17 +241,136 @@
             // lblID
             // 
             this.lblID.AutoSize = true;
-            this.lblID.Location = new System.Drawing.Point(13, 9);
+            this.lblID.Location = new System.Drawing.Point(13, 10);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(0, 13);
+            this.lblID.Size = new System.Drawing.Size(0, 14);
             this.lblID.TabIndex = 16;
             this.lblID.Visible = false;
             // 
+            // lblVarsta
+            // 
+            this.lblVarsta.AutoSize = true;
+            this.lblVarsta.BackColor = System.Drawing.Color.Transparent;
+            this.lblVarsta.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVarsta.Location = new System.Drawing.Point(12, 198);
+            this.lblVarsta.Name = "lblVarsta";
+            this.lblVarsta.Size = new System.Drawing.Size(65, 24);
+            this.lblVarsta.TabIndex = 17;
+            this.lblVarsta.Text = "Varsta";
+            // 
+            // gpbVarsta
+            // 
+            this.gpbVarsta.BackColor = System.Drawing.Color.Transparent;
+            this.gpbVarsta.Controls.Add(this.ckb3luni);
+            this.gpbVarsta.Controls.Add(this.ckb12ani);
+            this.gpbVarsta.Controls.Add(this.ckb18ani);
+            this.gpbVarsta.Controls.Add(this.ckb36luni);
+            this.gpbVarsta.Location = new System.Drawing.Point(16, 215);
+            this.gpbVarsta.Name = "gpbVarsta";
+            this.gpbVarsta.Size = new System.Drawing.Size(252, 78);
+            this.gpbVarsta.TabIndex = 18;
+            this.gpbVarsta.TabStop = false;
+            // 
+            // ckb3luni
+            // 
+            this.ckb3luni.AutoSize = true;
+            this.ckb3luni.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckb3luni.Location = new System.Drawing.Point(145, 13);
+            this.ckb3luni.Name = "ckb3luni";
+            this.ckb3luni.Size = new System.Drawing.Size(76, 25);
+            this.ckb3luni.TabIndex = 22;
+            this.ckb3luni.Text = "<3luni";
+            this.ckb3luni.UseVisualStyleBackColor = true;
+            // 
+            // ckb12ani
+            // 
+            this.ckb12ani.AutoSize = true;
+            this.ckb12ani.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckb12ani.Location = new System.Drawing.Point(30, 46);
+            this.ckb12ani.Name = "ckb12ani";
+            this.ckb12ani.Size = new System.Drawing.Size(78, 25);
+            this.ckb12ani.TabIndex = 21;
+            this.ckb12ani.Text = ">12ani";
+            this.ckb12ani.UseVisualStyleBackColor = true;
+            // 
+            // ckb18ani
+            // 
+            this.ckb18ani.AutoSize = true;
+            this.ckb18ani.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckb18ani.Location = new System.Drawing.Point(145, 46);
+            this.ckb18ani.Name = "ckb18ani";
+            this.ckb18ani.Size = new System.Drawing.Size(78, 25);
+            this.ckb18ani.TabIndex = 20;
+            this.ckb18ani.Text = ">18ani";
+            this.ckb18ani.UseVisualStyleBackColor = true;
+            // 
+            // ckb36luni
+            // 
+            this.ckb36luni.AutoSize = true;
+            this.ckb36luni.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckb36luni.Location = new System.Drawing.Point(30, 13);
+            this.ckb36luni.Name = "ckb36luni";
+            this.ckb36luni.Size = new System.Drawing.Size(85, 25);
+            this.ckb36luni.TabIndex = 19;
+            this.ckb36luni.Text = "3-6luni";
+            this.ckb36luni.UseVisualStyleBackColor = true;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.salveazaListaMedicamentelorToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(824, 24);
+            this.menuStrip1.TabIndex = 19;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // salveazaListaMedicamentelorToolStripMenuItem
+            // 
+            this.salveazaListaMedicamentelorToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
+            this.salveazaListaMedicamentelorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuActualizare,
+            this.menuExpirare});
+            this.salveazaListaMedicamentelorToolStripMenuItem.Name = "salveazaListaMedicamentelorToolStripMenuItem";
+            this.salveazaListaMedicamentelorToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.salveazaListaMedicamentelorToolStripMenuItem.Text = "Data";
+            // 
+            // menuActualizare
+            // 
+            this.menuActualizare.BackColor = System.Drawing.Color.Transparent;
+            this.menuActualizare.Name = "menuActualizare";
+            this.menuActualizare.Size = new System.Drawing.Size(202, 22);
+            this.menuActualizare.Text = "Afiseaza data actualizarii";
+            this.menuActualizare.Click += new System.EventHandler(this.menuActualizare_Click);
+            // 
+            // menuExpirare
+            // 
+            this.menuExpirare.BackColor = System.Drawing.Color.Transparent;
+            this.menuExpirare.Name = "menuExpirare";
+            this.menuExpirare.Size = new System.Drawing.Size(202, 22);
+            this.menuExpirare.Text = "Afiseaza data expirarii";
+            this.menuExpirare.Click += new System.EventHandler(this.menuExpirare_Click);
+            // 
+            // dtActualizare
+            // 
+            this.dtActualizare.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtActualizare.Location = new System.Drawing.Point(529, 0);
+            this.dtActualizare.Name = "dtActualizare";
+            this.dtActualizare.Size = new System.Drawing.Size(247, 25);
+            this.dtActualizare.TabIndex = 20;
+            this.dtActualizare.Value = new System.DateTime(2020, 5, 30, 0, 0, 0, 0);
+            // 
             // FormMedicament
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::InterfataFarmacie.Properties.Resources.shutterstock_1452259085_cutii_medicamente_fiole_antibiotice2_1035x425;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(824, 496);
+            this.Controls.Add(this.dtActualizare);
+            this.Controls.Add(this.lblVarsta);
+            this.Controls.Add(this.gpbVarsta);
             this.Controls.Add(this.lblID);
             this.Controls.Add(this.lblMesaj);
             this.Controls.Add(this.gpbReteta);
@@ -240,9 +386,21 @@
             this.Controls.Add(this.txtNume);
             this.Controls.Add(this.lblPret);
             this.Controls.Add(this.lblNume);
+            this.Controls.Add(this.menuStrip1);
+            this.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.MainMenuStrip = this.menuStrip1;
+            this.MaximumSize = new System.Drawing.Size(840, 535);
+            this.MinimumSize = new System.Drawing.Size(687, 490);
             this.Name = "FormMedicament";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Text = resources.GetString("$this.Text");
             this.gpbReteta.ResumeLayout(false);
             this.gpbReteta.PerformLayout();
+            this.gpbVarsta.ResumeLayout(false);
+            this.gpbVarsta.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -267,6 +425,17 @@
         private System.Windows.Forms.Label lblID;
         private System.Windows.Forms.RadioButton rdbRetetaNu;
         private System.Windows.Forms.RadioButton rdbRetetaDa;
+        private System.Windows.Forms.Label lblVarsta;
+        private System.Windows.Forms.GroupBox gpbVarsta;
+        private System.Windows.Forms.CheckBox ckb3luni;
+        private System.Windows.Forms.CheckBox ckb12ani;
+        private System.Windows.Forms.CheckBox ckb18ani;
+        private System.Windows.Forms.CheckBox ckb36luni;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem salveazaListaMedicamentelorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menuActualizare;
+        private System.Windows.Forms.ToolStripMenuItem menuExpirare;
+        private System.Windows.Forms.DateTimePicker dtActualizare;
     }
 }
 

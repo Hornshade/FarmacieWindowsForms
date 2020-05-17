@@ -3,3 +3,9 @@ D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\LibrarieMedicamente\
 D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\LibrarieMedicamente\obj\Debug\LibrarieMedicamente.csprojAssemblyReference.cache
 D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\LibrarieMedicamente\obj\Debug\LibrarieMedicamente.dll
 D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\LibrarieMedicamente\obj\Debug\LibrarieMedicamente.pdb
+D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\LibrarieMedicamente\bin\Debug\LibrarieMedicamente.dll
+D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\LibrarieMedicamente\bin\Debug\LibrarieMedicamente.pdb
+D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\LibrarieMedicamente\obj\Debug\LibrarieMedicamente.csprojAssemblyReference.cache
+D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\LibrarieMedicamente\obj\Debug\LibrarieMedicamente.dll
+D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\LibrarieMedicamente\obj\Debug\LibrarieMedicamente.pdb
+D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\LibrarieMedicamente\obj\Debug\LibrarieMedicamente.csproj.CoreCompileInputs.cache
