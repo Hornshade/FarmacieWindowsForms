@@ -29,7 +29,7 @@ namespace InterfataFarmacie
         private void btnAdauga_Click(object sender, EventArgs e)
         {
             ResetCuloareEtichete();
-
+            
             ErrorCode codValidare = Validare(txtNume.Text, txtPret.Text);
             if (codValidare != ErrorCode.CORRECT)
             {
@@ -51,10 +51,11 @@ namespace InterfataFarmacie
                 adminMedicamente.AddMedicament(m);
                 lblMesaj.Visible = true;
                 lblMesaj.Text = "Medicamentul a fost adaugat";
-
+                
                 ResetControale();
                 
             }
+            Numenume.medicamentes = adminMedicamente.GetMedicamente();
         }
         // Checks if pret is an integer from 0-9 in ASCII code 
         private bool VerificarePret(string pret)
@@ -185,12 +186,13 @@ namespace InterfataFarmacie
                     //var linieTabel = string.Format("{0,-5}{1,-35}{2,20}{3,30}", m.IdMedicament, m.Nume, m.Pret, m.Administrare);
                     lstAfisare.Items.Add(linieTabel);
                 }
-                
+                Numenume.medicamentes = adminMedicamente.GetMedicamente();
             }
         }
         // Input name and search for it in the list , followed by displaying a text with the price of the drug , its name and type.
         private void btnCauta_Click(object sender, EventArgs e)
         {
+            Numenume.medicamentes = adminMedicamente.GetMedicamente();
             Medicamente m = adminMedicamente.GetMedicament(txtNume.Text);
             if (m != null)
             {

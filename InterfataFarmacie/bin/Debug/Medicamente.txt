@@ -1,1 +1,5 @@
-1;Sabin;98;Sirop;Da;>18ani;17-May-22 21:10:37;17-May-20 21:10:37
+1;asd;346;Sirop;Nu;<3luni <3luni <3luni;18-May-22 12:53:01 AM;18-May-20 12:53:01 AM
+2;Nurofen;65;Sirop;Da;<3luni >12ani;18-May-22 12:52:06 AM;18-May-20 12:52:06 AM
+3;Paracetamol;29;Pastile;Nu;>12ani >18ani;18-May-22 12:39:33 AM;18-May-20 12:39:33 AM
+4;Ospen;35;Supozitoare;Nu;>12ani;18-May-22 12:49:08 AM;18-May-20 12:49:08 AM
+5;Aspirina;3.5;Pastile;Nu;>12ani >18ani;18-May-22 12:51:14 AM;18-May-20 12:51:14 AM

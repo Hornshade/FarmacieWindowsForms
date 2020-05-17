@@ -11,7 +11,6 @@ D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\InterfataFarmacie\ob
 D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\InterfataFarmacie\obj\Debug\InterfataFarmacie.csproj.CopyComplete
 D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\InterfataFarmacie\obj\Debug\InterfataFarmacie.exe
 D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\InterfataFarmacie\obj\Debug\InterfataFarmacie.pdb
-D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\InterfataFarmacie\obj\Debug\InterfataFarmacie.FormEdit.resources
 D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\InterfataFarmacie\obj\Debug\InterfataFarmacie.Formtest.resources
 D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\InterfataFarmacie\obj\Debug\InterfataFarmacie.FormMedicament.resources
 D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\InterfataFarmacie\bin\Debug\InterfataFarmacie.exe.config

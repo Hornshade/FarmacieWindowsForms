@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMedicament));
             this.lblNume = new System.Windows.Forms.Label();
             this.lblPret = new System.Windows.Forms.Label();
             this.txtNume = new System.Windows.Forms.TextBox();
@@ -394,7 +393,7 @@
             this.MinimumSize = new System.Drawing.Size(687, 490);
             this.Name = "FormMedicament";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Text = resources.GetString("$this.Text");
+            this.Text = "Administrare Medicamente";
             this.gpbReteta.ResumeLayout(false);
             this.gpbReteta.PerformLayout();
             this.gpbVarsta.ResumeLayout(false);
