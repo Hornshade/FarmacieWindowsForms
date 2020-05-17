@@ -189,9 +189,9 @@
             this.ckbEdit18ani.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ckbEdit18ani.Location = new System.Drawing.Point(121, 53);
             this.ckbEdit18ani.Name = "ckbEdit18ani";
-            this.ckbEdit18ani.Size = new System.Drawing.Size(90, 25);
+            this.ckbEdit18ani.Size = new System.Drawing.Size(84, 25);
             this.ckbEdit18ani.TabIndex = 11;
-            this.ckbEdit18ani.Text = ">18 ani";
+            this.ckbEdit18ani.Text = ">18ani";
             this.ckbEdit18ani.UseVisualStyleBackColor = true;
             // 
             // ckbEdit3luni
@@ -200,9 +200,9 @@
             this.ckbEdit3luni.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ckbEdit3luni.Location = new System.Drawing.Point(121, 22);
             this.ckbEdit3luni.Name = "ckbEdit3luni";
-            this.ckbEdit3luni.Size = new System.Drawing.Size(94, 25);
+            this.ckbEdit3luni.Size = new System.Drawing.Size(82, 25);
             this.ckbEdit3luni.TabIndex = 12;
-            this.ckbEdit3luni.Text = "< 3 luni";
+            this.ckbEdit3luni.Text = "<3luni";
             this.ckbEdit3luni.UseVisualStyleBackColor = true;
             // 
             // ckbEdit12ani
@@ -211,9 +211,9 @@
             this.ckbEdit12ani.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ckbEdit12ani.Location = new System.Drawing.Point(16, 53);
             this.ckbEdit12ani.Name = "ckbEdit12ani";
-            this.ckbEdit12ani.Size = new System.Drawing.Size(90, 25);
+            this.ckbEdit12ani.Size = new System.Drawing.Size(84, 25);
             this.ckbEdit12ani.TabIndex = 11;
-            this.ckbEdit12ani.Text = ">12 ani";
+            this.ckbEdit12ani.Text = ">12ani";
             this.ckbEdit12ani.UseVisualStyleBackColor = true;
             // 
             // ckbEdit36luni
@@ -222,9 +222,9 @@
             this.ckbEdit36luni.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ckbEdit36luni.Location = new System.Drawing.Point(16, 19);
             this.ckbEdit36luni.Name = "ckbEdit36luni";
-            this.ckbEdit36luni.Size = new System.Drawing.Size(98, 25);
+            this.ckbEdit36luni.Size = new System.Drawing.Size(92, 25);
             this.ckbEdit36luni.TabIndex = 11;
-            this.ckbEdit36luni.Text = "3-6 luni";
+            this.ckbEdit36luni.Text = "3-6luni";
             this.ckbEdit36luni.UseVisualStyleBackColor = true;
             // 
             // btnFinishEdit

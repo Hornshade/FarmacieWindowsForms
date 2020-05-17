@@ -296,7 +296,22 @@ namespace InterfataFarmacie
             else
                 return false;
         }
+        
+        private void menuActualizare_Click(object sender, EventArgs e)
+        {
+            if(lstAfisare.SelectedIndex>=0)
+            {
+                dtActualizare.Value = Numenume.medicamentes[lstAfisare.SelectedIndex - 1].dataActualizare;
+            }
+        }
 
+        private void menuExpirare_Click(object sender, EventArgs e)
+        {
+            if(lstAfisare.SelectedIndex>=0)
+            {
+                dtActualizare.Value = Numenume.medicamentes[lstAfisare.SelectedIndex - 1].dataExpirare;
+            }
+        }
     }
     public static class Numenume
     {

@@ -1,3 +1,1 @@
-1;Test1;70;Supozitoare;Nu;>12 ani >18 ani
-2;Paracetamol;39;Pastile;Da;>12 ani >18 ani >12 ani
-3;Aspirina;457;Pastile;Da;< 3 luni 3-6 luni
+1;Sabin;98;Sirop;Da;>18ani;17-May-22 21:10:37;17-May-20 21:10:37

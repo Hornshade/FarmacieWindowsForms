@@ -24,7 +24,6 @@ namespace InterfataFarmacie
             AutoCompleteEdit();
         }
 
-       
         public void AutoCompleteEdit()
         {
 
@@ -35,8 +34,7 @@ namespace InterfataFarmacie
                 rdbEditDa.Checked = true;
             else
                 rdbEditNu.Checked = true;
-            Numenume.medicamentes[indexz].Varsta = new List<string>();
-            Numenume.medicamentes[indexz].Varsta.AddRange(VarsteSelectate);
+            
             foreach (var vrst in gpbVarstaEdit.Controls)
             {
                 if (vrst is CheckBox)
@@ -47,6 +45,7 @@ namespace InterfataFarmacie
                             vrstBox.Checked = true;
                 }
             }
+            
         }
         
         private void btnFinishEdit_Click(object sender, EventArgs e)

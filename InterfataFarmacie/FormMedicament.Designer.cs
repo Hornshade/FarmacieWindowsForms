@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMedicament));
             this.lblNume = new System.Windows.Forms.Label();
             this.lblPret = new System.Windows.Forms.Label();
             this.txtNume = new System.Windows.Forms.TextBox();
@@ -53,8 +54,9 @@
             this.ckb36luni = new System.Windows.Forms.CheckBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.salveazaListaMedicamentelorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salveazaTipTxtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salveazaBinaryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuActualizare = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuExpirare = new System.Windows.Forms.ToolStripMenuItem();
+            this.dtActualizare = new System.Windows.Forms.DateTimePicker();
             this.gpbReteta.SuspendLayout();
             this.gpbVarsta.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -65,7 +67,7 @@
             this.lblNume.AutoSize = true;
             this.lblNume.BackColor = System.Drawing.Color.Transparent;
             this.lblNume.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNume.Location = new System.Drawing.Point(12, 20);
+            this.lblNume.Location = new System.Drawing.Point(15, 27);
             this.lblNume.Name = "lblNume";
             this.lblNume.Size = new System.Drawing.Size(60, 24);
             this.lblNume.TabIndex = 0;
@@ -76,7 +78,7 @@
             this.lblPret.AutoSize = true;
             this.lblPret.BackColor = System.Drawing.Color.Transparent;
             this.lblPret.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPret.Location = new System.Drawing.Point(12, 60);
+            this.lblPret.Location = new System.Drawing.Point(15, 67);
             this.lblPret.Name = "lblPret";
             this.lblPret.Size = new System.Drawing.Size(46, 24);
             this.lblPret.TabIndex = 1;
@@ -103,7 +105,7 @@
             this.lblReteta.AutoSize = true;
             this.lblReteta.BackColor = System.Drawing.Color.Transparent;
             this.lblReteta.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReteta.Location = new System.Drawing.Point(12, 121);
+            this.lblReteta.Location = new System.Drawing.Point(15, 121);
             this.lblReteta.Name = "lblReteta";
             this.lblReteta.Size = new System.Drawing.Size(63, 24);
             this.lblReteta.TabIndex = 4;
@@ -229,7 +231,7 @@
             this.lblMesaj.AutoSize = true;
             this.lblMesaj.BackColor = System.Drawing.Color.Transparent;
             this.lblMesaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMesaj.Location = new System.Drawing.Point(12, 431);
+            this.lblMesaj.Location = new System.Drawing.Point(15, 412);
             this.lblMesaj.Name = "lblMesaj";
             this.lblMesaj.Size = new System.Drawing.Size(87, 24);
             this.lblMesaj.TabIndex = 15;
@@ -328,25 +330,36 @@
             // 
             this.salveazaListaMedicamentelorToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
             this.salveazaListaMedicamentelorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.salveazaTipTxtToolStripMenuItem,
-            this.salveazaBinaryToolStripMenuItem});
+            this.menuActualizare,
+            this.menuExpirare});
             this.salveazaListaMedicamentelorToolStripMenuItem.Name = "salveazaListaMedicamentelorToolStripMenuItem";
-            this.salveazaListaMedicamentelorToolStripMenuItem.Size = new System.Drawing.Size(177, 20);
-            this.salveazaListaMedicamentelorToolStripMenuItem.Text = "Salveaza lista medicamentelor";
+            this.salveazaListaMedicamentelorToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.salveazaListaMedicamentelorToolStripMenuItem.Text = "Data";
             // 
-            // salveazaTipTxtToolStripMenuItem
+            // menuActualizare
             // 
-            this.salveazaTipTxtToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
-            this.salveazaTipTxtToolStripMenuItem.Name = "salveazaTipTxtToolStripMenuItem";
-            this.salveazaTipTxtToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.salveazaTipTxtToolStripMenuItem.Text = "Salveaza tip txt";
+            this.menuActualizare.BackColor = System.Drawing.Color.Transparent;
+            this.menuActualizare.Name = "menuActualizare";
+            this.menuActualizare.Size = new System.Drawing.Size(202, 22);
+            this.menuActualizare.Text = "Afiseaza data actualizarii";
+            this.menuActualizare.Click += new System.EventHandler(this.menuActualizare_Click);
             // 
-            // salveazaBinaryToolStripMenuItem
+            // menuExpirare
             // 
-            this.salveazaBinaryToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
-            this.salveazaBinaryToolStripMenuItem.Name = "salveazaBinaryToolStripMenuItem";
-            this.salveazaBinaryToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.salveazaBinaryToolStripMenuItem.Text = "Salveaza binary";
+            this.menuExpirare.BackColor = System.Drawing.Color.Transparent;
+            this.menuExpirare.Name = "menuExpirare";
+            this.menuExpirare.Size = new System.Drawing.Size(202, 22);
+            this.menuExpirare.Text = "Afiseaza data expirarii";
+            this.menuExpirare.Click += new System.EventHandler(this.menuExpirare_Click);
+            // 
+            // dtActualizare
+            // 
+            this.dtActualizare.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtActualizare.Location = new System.Drawing.Point(529, 0);
+            this.dtActualizare.Name = "dtActualizare";
+            this.dtActualizare.Size = new System.Drawing.Size(247, 25);
+            this.dtActualizare.TabIndex = 20;
+            this.dtActualizare.Value = new System.DateTime(2020, 5, 30, 0, 0, 0, 0);
             // 
             // FormMedicament
             // 
@@ -355,6 +368,7 @@
             this.BackgroundImage = global::InterfataFarmacie.Properties.Resources.shutterstock_1452259085_cutii_medicamente_fiole_antibiotice2_1035x425;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(824, 496);
+            this.Controls.Add(this.dtActualizare);
             this.Controls.Add(this.lblVarsta);
             this.Controls.Add(this.gpbVarsta);
             this.Controls.Add(this.lblID);
@@ -380,6 +394,7 @@
             this.MinimumSize = new System.Drawing.Size(687, 490);
             this.Name = "FormMedicament";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Text = resources.GetString("$this.Text");
             this.gpbReteta.ResumeLayout(false);
             this.gpbReteta.PerformLayout();
             this.gpbVarsta.ResumeLayout(false);
@@ -418,8 +433,9 @@
         private System.Windows.Forms.CheckBox ckb36luni;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem salveazaListaMedicamentelorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salveazaTipTxtToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salveazaBinaryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menuActualizare;
+        private System.Windows.Forms.ToolStripMenuItem menuExpirare;
+        private System.Windows.Forms.DateTimePicker dtActualizare;
     }
 }
 

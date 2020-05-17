@@ -14,3 +14,19 @@ D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\InterfataFarmacie\ob
 D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\InterfataFarmacie\obj\Debug\InterfataFarmacie.FormEdit.resources
 D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\InterfataFarmacie\obj\Debug\InterfataFarmacie.Formtest.resources
 D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\InterfataFarmacie\obj\Debug\InterfataFarmacie.FormMedicament.resources
+D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\InterfataFarmacie\bin\Debug\InterfataFarmacie.exe.config
+D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\InterfataFarmacie\bin\Debug\InterfataFarmacie.exe
+D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\InterfataFarmacie\bin\Debug\InterfataFarmacie.pdb
+D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\InterfataFarmacie\bin\Debug\LibrarieMedicamente.dll
+D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\InterfataFarmacie\bin\Debug\StocareData.dll
+D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\InterfataFarmacie\bin\Debug\LibrarieMedicamente.pdb
+D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\InterfataFarmacie\bin\Debug\StocareData.pdb
+D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\InterfataFarmacie\obj\Debug\InterfataFarmacie.csprojAssemblyReference.cache
+D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\InterfataFarmacie\obj\Debug\InterfataFarmacie.FormEdit.resources
+D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\InterfataFarmacie\obj\Debug\InterfataFarmacie.FormMedicament.resources
+D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\InterfataFarmacie\obj\Debug\InterfataFarmacie.Formtest.resources
+D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\InterfataFarmacie\obj\Debug\InterfataFarmacie.Properties.Resources.resources
+D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\InterfataFarmacie\obj\Debug\InterfataFarmacie.csproj.GenerateResource.cache
+D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\InterfataFarmacie\obj\Debug\InterfataFarmacie.csproj.CopyComplete
+D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\InterfataFarmacie\obj\Debug\InterfataFarmacie.exe
+D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\InterfataFarmacie\obj\Debug\InterfataFarmacie.pdb
