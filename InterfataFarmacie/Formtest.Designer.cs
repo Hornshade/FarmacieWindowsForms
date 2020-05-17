@@ -1,6 +1,6 @@
 ﻿namespace InterfataFarmacie
 {
-    partial class FormEdit
+    partial class Formtest
     {
         /// <summary>
         /// Required designer variable.
@@ -45,7 +45,6 @@
             this.ckbEdit12ani = new System.Windows.Forms.CheckBox();
             this.ckbEdit36luni = new System.Windows.Forms.CheckBox();
             this.btnFinishEdit = new System.Windows.Forms.Button();
-            this.txtEditNume = new System.Windows.Forms.TextBox();
             this.gpbEditReteta.SuspendLayout();
             this.gpbVarstaEdit.SuspendLayout();
             this.SuspendLayout();
@@ -58,7 +57,7 @@
             this.lblEditNume.Location = new System.Drawing.Point(170, 10);
             this.lblEditNume.Name = "lblEditNume";
             this.lblEditNume.Size = new System.Drawing.Size(87, 31);
-            this.lblEditNume.TabIndex = 0;
+            this.lblEditNume.TabIndex = 1;
             this.lblEditNume.Text = "Nume";
             // 
             // rtbEditNume
@@ -67,7 +66,7 @@
             this.rtbEditNume.Location = new System.Drawing.Point(120, 44);
             this.rtbEditNume.Name = "rtbEditNume";
             this.rtbEditNume.Size = new System.Drawing.Size(183, 38);
-            this.rtbEditNume.TabIndex = 1;
+            this.rtbEditNume.TabIndex = 2;
             this.rtbEditNume.Text = " ";
             // 
             // lblEditPret
@@ -78,7 +77,7 @@
             this.lblEditPret.Location = new System.Drawing.Point(175, 100);
             this.lblEditPret.Name = "lblEditPret";
             this.lblEditPret.Size = new System.Drawing.Size(69, 31);
-            this.lblEditPret.TabIndex = 2;
+            this.lblEditPret.TabIndex = 3;
             this.lblEditPret.Text = "Pret";
             // 
             // rtbEditPret
@@ -87,7 +86,7 @@
             this.rtbEditPret.Location = new System.Drawing.Point(120, 134);
             this.rtbEditPret.Name = "rtbEditPret";
             this.rtbEditPret.Size = new System.Drawing.Size(183, 38);
-            this.rtbEditPret.TabIndex = 3;
+            this.rtbEditPret.TabIndex = 4;
             this.rtbEditPret.Text = " ";
             // 
             // lblEditReteta
@@ -98,7 +97,7 @@
             this.lblEditReteta.Location = new System.Drawing.Point(165, 186);
             this.lblEditReteta.Name = "lblEditReteta";
             this.lblEditReteta.Size = new System.Drawing.Size(95, 31);
-            this.lblEditReteta.TabIndex = 4;
+            this.lblEditReteta.TabIndex = 5;
             this.lblEditReteta.Text = "Reteta";
             // 
             // gpbEditReteta
@@ -109,7 +108,7 @@
             this.gpbEditReteta.Location = new System.Drawing.Point(120, 211);
             this.gpbEditReteta.Name = "gpbEditReteta";
             this.gpbEditReteta.Size = new System.Drawing.Size(183, 46);
-            this.gpbEditReteta.TabIndex = 5;
+            this.gpbEditReteta.TabIndex = 6;
             this.gpbEditReteta.TabStop = false;
             // 
             // rdbEditNu
@@ -144,7 +143,7 @@
             this.lblEditAdministrare.Location = new System.Drawing.Point(121, 269);
             this.lblEditAdministrare.Name = "lblEditAdministrare";
             this.lblEditAdministrare.Size = new System.Drawing.Size(182, 31);
-            this.lblEditAdministrare.TabIndex = 6;
+            this.lblEditAdministrare.TabIndex = 7;
             this.lblEditAdministrare.Text = "Administrare";
             // 
             // cmbAdministrare
@@ -158,7 +157,7 @@
             this.cmbAdministrare.Location = new System.Drawing.Point(120, 303);
             this.cmbAdministrare.Name = "cmbAdministrare";
             this.cmbAdministrare.Size = new System.Drawing.Size(183, 21);
-            this.cmbAdministrare.TabIndex = 7;
+            this.cmbAdministrare.TabIndex = 8;
             // 
             // lblEditVarsta
             // 
@@ -168,7 +167,7 @@
             this.lblEditVarsta.Location = new System.Drawing.Point(164, 338);
             this.lblEditVarsta.Name = "lblEditVarsta";
             this.lblEditVarsta.Size = new System.Drawing.Size(96, 31);
-            this.lblEditVarsta.TabIndex = 8;
+            this.lblEditVarsta.TabIndex = 9;
             this.lblEditVarsta.Text = "Varsta";
             // 
             // gpbVarstaEdit
@@ -181,7 +180,7 @@
             this.gpbVarstaEdit.Location = new System.Drawing.Point(102, 372);
             this.gpbVarstaEdit.Name = "gpbVarstaEdit";
             this.gpbVarstaEdit.Size = new System.Drawing.Size(220, 88);
-            this.gpbVarstaEdit.TabIndex = 9;
+            this.gpbVarstaEdit.TabIndex = 10;
             this.gpbVarstaEdit.TabStop = false;
             // 
             // ckbEdit18ani
@@ -199,7 +198,7 @@
             // 
             this.ckbEdit3luni.AutoSize = true;
             this.ckbEdit3luni.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ckbEdit3luni.Location = new System.Drawing.Point(121, 19);
+            this.ckbEdit3luni.Location = new System.Drawing.Point(121, 22);
             this.ckbEdit3luni.Name = "ckbEdit3luni";
             this.ckbEdit3luni.Size = new System.Drawing.Size(94, 25);
             this.ckbEdit3luni.TabIndex = 12;
@@ -235,26 +234,17 @@
             this.btnFinishEdit.Location = new System.Drawing.Point(145, 466);
             this.btnFinishEdit.Name = "btnFinishEdit";
             this.btnFinishEdit.Size = new System.Drawing.Size(143, 65);
-            this.btnFinishEdit.TabIndex = 10;
+            this.btnFinishEdit.TabIndex = 11;
             this.btnFinishEdit.Text = "Editeaza";
             this.btnFinishEdit.UseVisualStyleBackColor = false;
+            this.btnFinishEdit.Click += new System.EventHandler(this.btnFinishEdit_Click);
             // 
-            // txtEditNume
-            // 
-            this.txtEditNume.Location = new System.Drawing.Point(297, 18);
-            this.txtEditNume.Name = "txtEditNume";
-            this.txtEditNume.Size = new System.Drawing.Size(100, 20);
-            this.txtEditNume.TabIndex = 11;
-            this.txtEditNume.Text = "asd";
-            // 
-            // FormEdit
+            // Formtest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::InterfataFarmacie.Properties.Resources._724449_1524756677_studiu_medicamentele_antidepresive_asociate_cu_un_risc_crescut_de_dementa;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(428, 543);
-            this.Controls.Add(this.txtEditNume);
             this.Controls.Add(this.btnFinishEdit);
             this.Controls.Add(this.gpbVarstaEdit);
             this.Controls.Add(this.lblEditVarsta);
@@ -266,8 +256,8 @@
             this.Controls.Add(this.lblEditPret);
             this.Controls.Add(this.rtbEditNume);
             this.Controls.Add(this.lblEditNume);
-            this.Name = "FormEdit";
-            this.Text = "FormEdit";
+            this.Name = "Formtest";
+            this.Text = "Editare";
             this.gpbEditReteta.ResumeLayout(false);
             this.gpbEditReteta.PerformLayout();
             this.gpbVarstaEdit.ResumeLayout(false);
@@ -291,11 +281,10 @@
         private System.Windows.Forms.ComboBox cmbAdministrare;
         private System.Windows.Forms.Label lblEditVarsta;
         private System.Windows.Forms.GroupBox gpbVarstaEdit;
-        private System.Windows.Forms.Button btnFinishEdit;
         private System.Windows.Forms.CheckBox ckbEdit18ani;
         private System.Windows.Forms.CheckBox ckbEdit3luni;
         private System.Windows.Forms.CheckBox ckbEdit12ani;
         private System.Windows.Forms.CheckBox ckbEdit36luni;
-        private System.Windows.Forms.TextBox txtEditNume;
+        private System.Windows.Forms.Button btnFinishEdit;
     }
 }

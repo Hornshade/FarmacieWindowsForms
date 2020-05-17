@@ -6,10 +6,11 @@ D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\InterfataFarmacie\bi
 D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\InterfataFarmacie\bin\Debug\LibrarieMedicamente.pdb
 D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\InterfataFarmacie\bin\Debug\StocareData.pdb
 D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\InterfataFarmacie\obj\Debug\InterfataFarmacie.csprojAssemblyReference.cache
-D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\InterfataFarmacie\obj\Debug\InterfataFarmacie.FormMedicament.resources
 D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\InterfataFarmacie\obj\Debug\InterfataFarmacie.Properties.Resources.resources
 D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\InterfataFarmacie\obj\Debug\InterfataFarmacie.csproj.GenerateResource.cache
 D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\InterfataFarmacie\obj\Debug\InterfataFarmacie.csproj.CopyComplete
 D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\InterfataFarmacie\obj\Debug\InterfataFarmacie.exe
 D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\InterfataFarmacie\obj\Debug\InterfataFarmacie.pdb
 D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\InterfataFarmacie\obj\Debug\InterfataFarmacie.FormEdit.resources
+D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\InterfataFarmacie\obj\Debug\InterfataFarmacie.Formtest.resources
+D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\InterfataFarmacie\obj\Debug\InterfataFarmacie.FormMedicament.resources

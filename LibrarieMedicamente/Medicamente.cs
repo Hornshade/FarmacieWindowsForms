@@ -37,7 +37,7 @@ namespace LibrarieMedicamente
                 {
                     if (VarstaStr != string.Empty)
                     {
-                        VarstaStr += SEPARATOR_SECUNDAR_FISIER;
+                        VarstaStr += SEPARATOR_PRINCIPAL_FISIER;
                     }
                     VarstaStr += vrst;
                 }
@@ -79,7 +79,7 @@ namespace LibrarieMedicamente
         public string ConvertString()
         {
             
-            string m = string.Format("Medicamentul  {0}  are pretul :   {1} , Administrare:{2}, Reteta: {3},pentru varsta: {4}  ", (Nume ?? " NECUNOSCUT "), Pret, Administrare,Reteta,VarstaString);
+            string m = string.Format("Medicamentul  {0}  are pretul :   {1} , Administrare:{2}\nReteta: {3},pentru varsta: {4}  ", (Nume ?? " NECUNOSCUT "), Pret, Administrare,Reteta,VarstaString);
             return m;
         }
 

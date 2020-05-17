@@ -1,7 +1,3 @@
-1;asda;34.6;Supozitoare;Da;
-2;dab;3;Injectabil;Nu;
-3;abd;324;Injectabil;Nu;
-4;agagda;34;Sirop;Da;
-5;asda;34.6;Supozitoare;Da;
-6;dab;3;Injectabil;Nu;
-7;asda;34.6;Supozitoare;Da;
+1;Test1;70;Supozitoare;Nu;>12 ani >18 ani
+2;Paracetamol;39;Pastile;Da;>12 ani >18 ani >12 ani
+3;Aspirina;457;Pastile;Da;< 3 luni 3-6 luni

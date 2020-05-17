@@ -12,6 +12,7 @@ using StocareData;
 
 namespace InterfataFarmacie
 {
+    
     public partial class FormMedicament : Form
     {
         IStocareData adminMedicamente;
@@ -20,6 +21,7 @@ namespace InterfataFarmacie
         {
             InitializeComponent();
             adminMedicamente = StocareFactory.GetAdministratorStocare();
+            Numenume.medicamentes = adminMedicamente.GetMedicamente();
         }
         
 
@@ -35,9 +37,7 @@ namespace InterfataFarmacie
             }
             else
             {
-                List<Medicamente> med = new List<Medicamente>();
-                med = adminMedicamente.GetMedicamente();
-                lstAfisare.Items.Add(med[0].Nume);
+               
                 Medicamente m = new Medicamente(txtNume.Text, Convert.ToSingle(txtPret.Text));
                 if (rdbRetetaDa.Checked == true)
                     m.Reteta = rdbRetetaDa.Text;
@@ -110,7 +110,7 @@ namespace InterfataFarmacie
             {
                 rezultatValidare |= ErrorCode.ADMINISTRARE_INCORECTA;
             }
-            if (VarsteSelectate.Count!=0)
+            if (ValidareCheckBox()== false)
             {
                 rezultatValidare |= ErrorCode.VARSTA_INCORECTA;
             }
@@ -208,9 +208,15 @@ namespace InterfataFarmacie
         private void btnEditeaza_Click(object sender, EventArgs e)
         {
             
-            FormEdit Editeaza = new FormEdit(adminMedicamente.GetMedicamentByIndex(lstAfisare.SelectedIndex-1));
-            Editeaza.ShowDialog();
-            
+            if (lstAfisare.SelectedIndex >= 0)
+            {
+                Numenume.medicamentes = adminMedicamente.GetMedicamente();
+                Formtest Editeaza = new Formtest(lstAfisare.SelectedIndex-1);
+                Editeaza.ShowDialog();
+                adminMedicamente.UpdateMedicament(Editeaza.ReturnData());
+
+
+            }
             //ResetCuloareEtichete();
             //ErrorCode codValidare = Validare(txtNume.Text, txtPret.Text);
             //if(codValidare !=ErrorCode.CORRECT)
@@ -271,19 +277,31 @@ namespace InterfataFarmacie
             }
                 
         }
-        // Checkbox Varsta 
-        private void ckbVarstaSLCT_Changed(object sender, EventArgs e)
+        // Checkbox Varsta validare 
+        private bool ValidareCheckBox()
         {
-            CheckBox checkChanged = sender as CheckBox;
-
-            string varstaSelectata = checkChanged.Text;
- 
-            if (checkChanged.Checked == true)
-                VarsteSelectate.Add(varstaSelectata);
+            foreach(var ckb in gpbVarsta.Controls)
+            {
+                if(ckb is CheckBox)
+                {
+                    var vrst = ckb as CheckBox;
+                    if (vrst.Checked == true)
+                        VarsteSelectate.Add(vrst.Text);
+                    else
+                        VarsteSelectate.Remove(vrst.Text);
+                }
+            }
+            if (VarsteSelectate.Count != 0)
+                return true;
             else
-                VarsteSelectate.Remove(varstaSelectata);
+                return false;
         }
 
-        
+    }
+    public static class Numenume
+    {
+        public static List<Medicamente> medicamentes = new List<Medicamente>();
+
     }
 }
+
