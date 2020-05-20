@@ -55,6 +55,7 @@
             this.salveazaListaMedicamentelorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuActualizare = new System.Windows.Forms.ToolStripMenuItem();
             this.menuExpirare = new System.Windows.Forms.ToolStripMenuItem();
+            this.filtreazaDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dtActualizare = new System.Windows.Forms.DateTimePicker();
             this.gpbReteta.SuspendLayout();
             this.gpbVarsta.SuspendLayout();
@@ -147,7 +148,7 @@
             // 
             // btnAdauga
             // 
-            this.btnAdauga.BackColor = System.Drawing.Color.Transparent;
+            this.btnAdauga.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnAdauga.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdauga.Location = new System.Drawing.Point(16, 299);
             this.btnAdauga.Name = "btnAdauga";
@@ -159,35 +160,38 @@
             // 
             // btnAfiseaza
             // 
+            this.btnAfiseaza.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnAfiseaza.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAfiseaza.Location = new System.Drawing.Point(171, 299);
             this.btnAfiseaza.Name = "btnAfiseaza";
             this.btnAfiseaza.Size = new System.Drawing.Size(97, 44);
             this.btnAfiseaza.TabIndex = 11;
             this.btnAfiseaza.Text = "Afiseaza";
-            this.btnAfiseaza.UseVisualStyleBackColor = true;
+            this.btnAfiseaza.UseVisualStyleBackColor = false;
             this.btnAfiseaza.Click += new System.EventHandler(this.btnAfiseaza_Click);
             // 
             // btnEditeaza
             // 
+            this.btnEditeaza.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnEditeaza.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditeaza.Location = new System.Drawing.Point(16, 349);
             this.btnEditeaza.Name = "btnEditeaza";
             this.btnEditeaza.Size = new System.Drawing.Size(97, 44);
             this.btnEditeaza.TabIndex = 12;
             this.btnEditeaza.Text = "Editeaza";
-            this.btnEditeaza.UseVisualStyleBackColor = true;
+            this.btnEditeaza.UseVisualStyleBackColor = false;
             this.btnEditeaza.Click += new System.EventHandler(this.btnEditeaza_Click);
             // 
             // btnCauta
             // 
+            this.btnCauta.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnCauta.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCauta.Location = new System.Drawing.Point(171, 349);
             this.btnCauta.Name = "btnCauta";
             this.btnCauta.Size = new System.Drawing.Size(97, 44);
             this.btnCauta.TabIndex = 13;
             this.btnCauta.Text = "Cauta";
-            this.btnCauta.UseVisualStyleBackColor = true;
+            this.btnCauta.UseVisualStyleBackColor = false;
             this.btnCauta.Click += new System.EventHandler(this.btnCauta_Click);
             // 
             // gpbReteta
@@ -330,7 +334,8 @@
             this.salveazaListaMedicamentelorToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
             this.salveazaListaMedicamentelorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuActualizare,
-            this.menuExpirare});
+            this.menuExpirare,
+            this.filtreazaDataToolStripMenuItem});
             this.salveazaListaMedicamentelorToolStripMenuItem.Name = "salveazaListaMedicamentelorToolStripMenuItem";
             this.salveazaListaMedicamentelorToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.salveazaListaMedicamentelorToolStripMenuItem.Text = "Data";
@@ -350,6 +355,13 @@
             this.menuExpirare.Size = new System.Drawing.Size(202, 22);
             this.menuExpirare.Text = "Afiseaza data expirarii";
             this.menuExpirare.Click += new System.EventHandler(this.menuExpirare_Click);
+            // 
+            // filtreazaDataToolStripMenuItem
+            // 
+            this.filtreazaDataToolStripMenuItem.Name = "filtreazaDataToolStripMenuItem";
+            this.filtreazaDataToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.filtreazaDataToolStripMenuItem.Text = "Filtreaza data";
+            this.filtreazaDataToolStripMenuItem.Click += new System.EventHandler(this.filtreazaDataToolStripMenuItem_Click);
             // 
             // dtActualizare
             // 
@@ -435,6 +447,7 @@
         private System.Windows.Forms.ToolStripMenuItem menuActualizare;
         private System.Windows.Forms.ToolStripMenuItem menuExpirare;
         private System.Windows.Forms.DateTimePicker dtActualizare;
+        private System.Windows.Forms.ToolStripMenuItem filtreazaDataToolStripMenuItem;
     }
 }
 

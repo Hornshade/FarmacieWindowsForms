@@ -13,7 +13,7 @@ namespace InterfataFarmacie
 {
     public partial class Formtest : Form
     {
-        List<Medicamente> mzd = new List<Medicamente>();
+        
         List<string> VarsteSelectate = new List<string>();
         Medicamente med = new Medicamente();
         int indexz;
@@ -30,12 +30,12 @@ namespace InterfataFarmacie
             rtbEditNume.Text = Numenume.medicamentes[indexz].Nume;
             rtbEditPret.Text = Convert.ToString(Numenume.medicamentes[indexz].Pret);
             cmbAdministrare.Text = Numenume.medicamentes[indexz].Administrare;
-            if (Numenume.medicamentes[indexz].Reteta == "Da") //continua aici
+            if (Numenume.medicamentes[indexz].Reteta == "Da") 
                 rdbEditDa.Checked = true;
             else
                 rdbEditNu.Checked = true;
             
-            foreach (var vrst in gpbVarstaEdit.Controls)
+            foreach (var vrst in gpbVarstaEdit.Controls)    //parcurge fiecare checkbox din groupBoxul cu varsta pentru a completa checkboxurile si a transmite informatii din FormMedicament
             {
                 if (vrst is CheckBox)
                 {
@@ -124,7 +124,7 @@ namespace InterfataFarmacie
             lblEditReteta.ForeColor = default;
             lblEditVarsta.ForeColor = default;
 
-        }
+        }   //poate fi eliminata de aici
 
         private bool VerificarePret(string pret)
         {

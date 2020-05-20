@@ -30,8 +30,11 @@ namespace LibrarieMedicamente
         public string Administrare { get; set; }
         public List<string> Varsta { get; set; }
 
-        public DateTime dataActualizare;
-        public DateTime dataExpirare;
+        
+
+        public DateTime dataActualizare { get; set; }  /// pus get si set la dateTime, nu erau proprietati inainte``
+        public DateTime dataExpirare { get; set; }
+        /// proprietate care nu e auto-implemneted
         public string VarstaString
         {
             get
@@ -85,11 +88,11 @@ namespace LibrarieMedicamente
             Reteta = dateFisier[RETETA];
             Varsta = new List<string>();
             Varsta.AddRange(dateFisier[VARSTA].Split(SEPARATOR_SECUNDAR_FISIER));
-            DateTime.TryParse(dateFisier[ACTUALIZARE],out dataActualizare);
-            if(dataExpirare == DateTime.MinValue)
-                DateTime.TryParse(dateFisier[EXPIRARE],out dataExpirare);
-            //dataActualizare = Convert.ToDateTime(dateFisier[ACTUALIZARE]);
-            //dataExpirare = Convert.ToDateTime(dateFisier[EXPIRARE]);
+            //DateTime.TryParse(dateFisier[ACTUALIZARE],out dataActualizare);  comentat astea 3 lunii, ala cu aici era comentat inainte
+            //if(dataExpirare == DateTime.MinValue)
+            //    DateTime.TryParse(dateFisier[EXPIRARE],out dataExpirare);
+            dataActualizare = Convert.ToDateTime(dateFisier[ACTUALIZARE]); ///aici
+            dataExpirare = Convert.ToDateTime(dateFisier[EXPIRARE]);
         }
         #endregion
         public string ConvertString()
@@ -110,5 +113,7 @@ namespace LibrarieMedicamente
 
             return m;
         }
+
+        //public string LinieTabel=> var linieTabel = IdMedicament.ToString().PadRight(5 - IdMedicament.ToString().Length) + Nume.PadRight(20 - Nume.Length) + "\t\t\t" + Pret.ToString().PadRight(7 - Pret.ToString().Length) + "\t\t" +Administrare.PadRight(15 - Administrare.Length) + "\t" + Reteta;
     }
 }

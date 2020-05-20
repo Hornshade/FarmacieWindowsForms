@@ -24,6 +24,7 @@ namespace InterfataFarmacie
             Numenume.medicamentes = adminMedicamente.GetMedicamente();
         }
         
+        
 
         // On use the button adds the input into the list and the file.
         private void btnAdauga_Click(object sender, EventArgs e)
@@ -313,6 +314,40 @@ namespace InterfataFarmacie
             {
                 dtActualizare.Value = Numenume.medicamentes[lstAfisare.SelectedIndex - 1].dataExpirare;
             }
+        }
+
+        private void filtreazaDataToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            lstAfisare.Items.Clear();
+            FormData afisareData = new FormData();
+            afisareData.ShowDialog();
+
+            string ID = "ID", nume = "Nume Medicament", pret = "Pret", administrare = "Administrare";
+            var antetTabel = ID.PadRight(5 - ID.Length) + nume.PadRight(20 - nume.Length) + "\t\t" + pret.PadRight(7 - pret.Length) + "\t\t" + administrare.PadRight(15 - administrare.Length) + "\t" + "Reteta";
+
+            lstAfisare.Items.Add(antetTabel);
+            
+            foreach (var data in Numenume.medicamentes)
+            {
+
+                ///Daca dataActualizare adica aia din medicament e mai devreme decat data selectata(mai mica) -> numar negativ
+                ///Daca dataPanaLa e mai devreme decat dataActualizare din medicament atunci returneaza numar negativ
+                if (DateTime.Compare(afisareData.dataDeLa, data.dataActualizare) <= 0 && DateTime.Compare(afisareData.dataPanaLa, data.dataActualizare) >= 0)
+                {   
+                    if (data.Administrare == "Supozitoare")
+                    {
+                        var linieTabel = data.IdMedicament.ToString().PadRight(5 - data.IdMedicament.ToString().Length) + data.Nume.PadRight(20 - data.Nume.Length) + "\t\t\t" + data.Pret.ToString().PadRight(7 - data.Pret.ToString().Length) + "\t\t" + data.Administrare.PadRight(15 - data.Administrare.Length) + "\t" + data.Reteta;
+                        lstAfisare.Items.Add(linieTabel);
+                    }
+                    else
+                    {
+                        var linieTabel = data.IdMedicament.ToString().PadRight(5 - data.IdMedicament.ToString().Length) + data.Nume.PadRight(20 - data.Nume.Length) + "\t\t\t" + data.Pret.ToString().PadRight(7 - data.Pret.ToString().Length) + "\t\t" + data.Administrare.PadRight(15 - data.Administrare.Length) + "\t\t" + data.Reteta;
+                        lstAfisare.Items.Add(linieTabel);
+                    }
+                }
+            }
+
+            
         }
     }
     public static class Numenume

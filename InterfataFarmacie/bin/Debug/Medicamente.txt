@@ -1,5 +1,6 @@
-1;asd;346;Sirop;Nu;<3luni <3luni <3luni;18-May-22 12:53:01 AM;18-May-20 12:53:01 AM
-2;Nurofen;65;Sirop;Da;<3luni >12ani;18-May-22 12:52:06 AM;18-May-20 12:52:06 AM
+1;Aspirina;38;Injectabil;Da;<3luni 3-6luni;19-May-22 7:09:04 PM;19-May-20 7:09:04 PM
+2;Nurofen;65;Sirop;Da;<3luni >12ani;18-May-22 12:52:06 AM;18-May-25 12:52:06 AM
 3;Paracetamol;29;Pastile;Nu;>12ani >18ani;18-May-22 12:39:33 AM;18-May-20 12:39:33 AM
 4;Ospen;35;Supozitoare;Nu;>12ani;18-May-22 12:49:08 AM;18-May-20 12:49:08 AM
 5;Aspirina;3.5;Pastile;Nu;>12ani >18ani;18-May-22 12:51:14 AM;18-May-20 12:51:14 AM
+6;Med20;20;Supozitoare;Nu;>18ani 3-6luni;20-May-22 5:27:11 PM;20-May-20 5:27:11 PM

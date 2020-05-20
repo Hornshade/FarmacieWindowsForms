@@ -29,3 +29,4 @@ D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\InterfataFarmacie\obj\D
 D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\InterfataFarmacie\obj\Debug\InterfataFarmacie.csproj.CopyComplete
 D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\InterfataFarmacie\obj\Debug\InterfataFarmacie.exe
 D:\FarmacieWindowsForms-form2\FarmacieWindowsForms-form2\InterfataFarmacie\obj\Debug\InterfataFarmacie.pdb
+D:\Scoala\Programare C#-PIU\FarmacieFORMS\InterfataFarmacie\InterfataFarmacie\obj\Debug\InterfataFarmacie.FormData.resources
